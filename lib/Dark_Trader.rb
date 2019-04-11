@@ -26,4 +26,8 @@ end
 #price_of_crypto
 
 Hash_final = Hash[name_of_crypto.zip(price_of_crypto)]
-puts Hash_final
+#puts Hash_final
+#hash = Hash[symbol_cryptocurrency.zip value_cryptocurrency]
+array = Hash_final.map { |key, value| { key => value } }
+
+puts array
